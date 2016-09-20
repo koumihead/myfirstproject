@@ -12,7 +12,7 @@ node {
 
     // Build Docker image
     stage 'Build'
-    sh "docker build -t koumihead/myfirtgithubrepo:${gitCommit()} ."
+    sh "docker build -t koumihead/myfirstgithubrepo:${gitCommit()} ."
 
     // Log in and push image to GitLab
     stage 'Publish'
